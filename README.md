@@ -1,16 +1,41 @@
-# React + Vite
+# Clínica Nutricional NutriVida
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Proyecto de aplicación web desarrollado para el caso Clínica Nutricional NutriVida, como parte de la asignatura de desarrollo FullStack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El objetivo es construir progresivamente una aplicación que permita presentar los servicios de la clínica y, en futuras etapas, incorporar las funcionalidades solicitadas en el caso oficial.
 
-## React Compiler
+## Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- HTML y JSX
+- CSS
+- Bootstrap
+- React Router
 
-## Expanding the ESLint configuration
+## Funcionalidades implementadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Página de inicio.
+- Página de servicios nutricionales.
+- Navegación mediante React Router.
+- Componentes reutilizables.
+- Uso de props.
+- Buscador interactivo mediante useState.
+- Diseño responsive.
+
+## Instalación
+
+1. Clonar el repositorio.
+2. Abrir la carpeta del proyecto.
+3. Ejecutar `npm install`.
+4. Ejecutar `npm run dev`.
+5. Abrir la dirección local mostrada en la terminal.
+
+## Estado del proyecto
+
+Semana 7: implementación inicial del frontend con React.
+
+El proyecto continuará desarrollándose durante las siguientes semanas.
