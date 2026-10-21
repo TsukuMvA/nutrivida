@@ -19,9 +19,13 @@ function Header() {
             Servicios
           </NavLink>
 
-          <a className="nav-link" href="#contacto">
+          <NavLink className="nav-link" to="/contacto">
             Contacto
-          </a>
+          </NavLink>
+
+          <NavLink className="nav-link" to="/login">
+            Iniciar sesión
+          </NavLink>
         </nav>
 
       </div>

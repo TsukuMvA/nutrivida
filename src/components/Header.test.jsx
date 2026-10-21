@@ -59,7 +59,7 @@ describe("Pruebas del componente Header", () => {
 
     expect(
       screen.getByRole("link", { name: "Contacto" })
-    ).toHaveAttribute("href", "#contacto");
+    ).toHaveAttribute("href", "/contacto");
   });
 
 });

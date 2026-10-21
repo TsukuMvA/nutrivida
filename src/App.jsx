@@ -1,29 +1,37 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Layout from "./layouts/Layout";
+import RutaProtegida from "./components/RutaProtegida";
 
 import Inicio from "./pages/Inicio";
 import Servicios from "./pages/Servicios";
+import Contacto from "./pages/Contacto";
+import Login from "./pages/Login";
+import Admin from "./pages/Admin";
 
 import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="app">
-
-        <Header />
-
-        <Routes>
+      <Routes>
+        <Route element={<Layout />}>
           <Route path="/" element={<Inicio />} />
           <Route path="/servicios" element={<Servicios />} />
-        </Routes>
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/login" element={<Login />} />
 
-        <Footer />
-
-      </div>
+          <Route
+            path="/admin"
+            element={
+              <RutaProtegida>
+                <Admin />
+              </RutaProtegida>
+            }
+          />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
